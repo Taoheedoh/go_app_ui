@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_app/login_page.dart';
+import 'package:go_app/register_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -86,7 +88,13 @@ class _MyAppState extends State<MyApp> {
               SizedBox(
                 width: 350,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const Login(),
+                      ),
+                    );
+                  },
                   child: const Text(
                     'LOGIN',
                     style: TextStyle(
@@ -98,18 +106,28 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               const SizedBox(
-                height: 50,
+                height: 10,
               ),
               SizedBox(
                 width: 350,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    side: const BorderSide(color: Colors.white, width: 2),
+                    backgroundColor: const Color.fromARGB(255, 9, 175, 134),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const Register(),
+                      ),
+                    );
+                  },
                   child: const Text(
                     'REGISTER',
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 9, 175, 134),
+                      color: Colors.white,
                     ),
                   ),
                 ),
