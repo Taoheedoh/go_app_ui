@@ -14,12 +14,18 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
+        body: Container(
+          decoration: const BoxDecoration(
+              color: Color.fromARGB(255, 9, 175, 134),
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(300),
+              )),
+        ),
       ),
-
     );
   }
 }
