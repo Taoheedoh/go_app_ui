@@ -10,6 +10,11 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return  Scaffold(
+      backgroundColor:const Color.fromARGB(255, 9, 175, 134),
+      body: Container(
+
+      ),
+    );
   }
 }
