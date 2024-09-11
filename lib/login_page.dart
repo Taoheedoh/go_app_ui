@@ -27,14 +27,7 @@ class _LoginState extends State<Login> {
               padding: EdgeInsets.all(8),
             ),
             Container(
-              // width: 10,
-              // height: ,
-              // decoration: const BoxDecoration(
-              //   color: Color.fromARGB(255, 9, 175, 134),
-              //   borderRadius: BorderRadius.all(
-              //     Radius.circular(100),
-              //   ),
-              // ),
+              padding: const EdgeInsets.all(10),
               alignment: FractionalOffset.topLeft,
               child: IconButton(
                 onPressed: () {
@@ -45,8 +38,14 @@ class _LoginState extends State<Login> {
                   backgroundColor: MaterialStatePropertyAll(
                     Color.fromARGB(255, 9, 175, 134),
                   ),
+                  foregroundColor: MaterialStatePropertyAll(
+                    Colors.white,
+                  ),
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 50,
             ),
           ],
         ),
