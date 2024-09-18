@@ -75,26 +75,54 @@ class _LoginState extends State<Login> {
             const SizedBox(
               height: 50,
             ),
-            // ignore: avoid_unnecessary_containers
-            Container(
-              margin: const EdgeInsets.only(left: 10, right: 10),
-              child: TextField(
-                decoration: InputDecoration(
-                  labelText: 'EMAIL',
-                  labelStyle: const TextStyle(
-                    color: Color.fromARGB(255, 9, 175, 134),
-                  ),
-                  prefixIcon: const Icon(
-                    Icons.mail,
-                    color: Color.fromARGB(255, 9, 175, 134),
-                  ),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(50),
-                    borderSide: const BorderSide(
-                        color: Color.fromARGB(255, 9, 175, 134), width: 2),
+            Column(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(left: 10, right: 10),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      labelText: 'EMAIL',
+                      labelStyle: const TextStyle(
+                        color: Color.fromARGB(255, 9, 175, 134),
+                      ),
+                      prefixIcon: const Icon(
+                        Icons.mail,
+                        color: Color.fromARGB(255, 9, 175, 134),
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(50),
+                        borderSide: const BorderSide(
+                            color: Color.fromARGB(255, 9, 175, 134), width: 2),
+                      ),
+                    ),
                   ),
                 ),
-              ),
+
+                const SizedBox(
+                  height: 20,
+                ),
+                // ignore: avoid_unnecessary_containers
+                Container(
+                  margin: const EdgeInsets.only(left: 10, right: 10),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      labelText: 'EMAIL',
+                      labelStyle: const TextStyle(
+                        color: Color.fromARGB(255, 9, 175, 134),
+                      ),
+                      prefixIcon: const Icon(
+                        Icons.mail,
+                        color: Color.fromARGB(255, 9, 175, 134),
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(50),
+                        borderSide: const BorderSide(
+                            color: Color.fromARGB(255, 9, 175, 134), width: 2),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
