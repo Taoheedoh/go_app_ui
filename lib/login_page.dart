@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_app/login_reg_page.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -32,7 +33,11 @@ class _LoginState extends State<Login> {
               alignment: FractionalOffset.topLeft,
               child: IconButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => const LoginReg(),
+                    ),
+                  );
                 },
                 icon: const Icon(Icons.clear),
                 style: const ButtonStyle(
@@ -106,12 +111,12 @@ class _LoginState extends State<Login> {
                   margin: const EdgeInsets.only(left: 10, right: 10),
                   child: TextField(
                     decoration: InputDecoration(
-                      labelText: 'EMAIL',
+                      labelText: 'PASSWORD',
                       labelStyle: const TextStyle(
                         color: Color.fromARGB(255, 9, 175, 134),
                       ),
                       prefixIcon: const Icon(
-                        Icons.mail,
+                        Icons.lock,
                         color: Color.fromARGB(255, 9, 175, 134),
                       ),
                       border: OutlineInputBorder(
@@ -120,6 +125,29 @@ class _LoginState extends State<Login> {
                             color: Color.fromARGB(255, 9, 175, 134), width: 2),
                       ),
                     ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 70,
+                ),
+
+                SizedBox(
+                  width: 370,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.all(15),
+                      side: const BorderSide(color: Colors.white, width: 2),
+                      backgroundColor: const Color.fromARGB(255, 9, 175, 134),
+                    ),
+                    child: const Text(
+                      'LOGIN',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                    onPressed: () {},
                   ),
                 ),
               ],
