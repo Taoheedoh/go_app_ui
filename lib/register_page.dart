@@ -13,16 +13,16 @@ class _RegisterState extends State<Register> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 9, 175, 134),
-      body: Container(
-        margin: const EdgeInsets.only(top: 100),
-        decoration: const BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(35),
-            topRight: Radius.circular(35),
+      body: SingleChildScrollView(
+        child: Container(
+          margin: const EdgeInsets.only(top: 100),
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(35),
+              topRight: Radius.circular(35),
+            ),
           ),
-        ),
-        child: SingleChildScrollView(
           child: Column(
             children: [
               const Padding(
@@ -88,6 +88,12 @@ class _RegisterState extends State<Register> {
                     margin: const EdgeInsets.only(left: 10, right: 10),
                     child: TextField(
                       decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50),
+                          borderSide: const BorderSide(
+                              color: Color.fromARGB(255, 9, 175, 134),
+                              width: 2),
+                        ),
                         labelText: 'DISPLAY NAME',
                         labelStyle: const TextStyle(
                           color: Color.fromARGB(255, 9, 175, 134),
@@ -96,12 +102,12 @@ class _RegisterState extends State<Register> {
                           Icons.person,
                           color: Color.fromARGB(255, 9, 175, 134),
                         ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: const BorderSide(
-                              color: Color.fromARGB(255, 9, 175, 134),
-                              width: 2),
-                        ),
+                        // border: OutlineInputBorder(
+                        //   borderRadius: BorderRadius.circular(50),
+                        //   borderSide: const BorderSide(
+                        //       color: Color.fromARGB(255, 9, 175, 134),
+                        //       width: 2),
+                        // ),
                       ),
                     ),
                   ),
@@ -114,6 +120,12 @@ class _RegisterState extends State<Register> {
                     margin: const EdgeInsets.only(left: 10, right: 10),
                     child: TextField(
                       decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50),
+                          borderSide: const BorderSide(
+                              color: Color.fromARGB(255, 9, 175, 134),
+                              width: 2),
+                        ),
                         labelText: 'EMAIL',
                         labelStyle: const TextStyle(
                           color: Color.fromARGB(255, 9, 175, 134),
@@ -122,12 +134,12 @@ class _RegisterState extends State<Register> {
                           Icons.mail,
                           color: Color.fromARGB(255, 9, 175, 134),
                         ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: const BorderSide(
-                              color: Color.fromARGB(255, 9, 175, 134),
-                              width: 2),
-                        ),
+                        // border: OutlineInputBorder(
+                        //   borderRadius: BorderRadius.circular(50),
+                        //   borderSide: const BorderSide(
+                        //       color: Color.fromARGB(255, 9, 175, 134),
+                        //       width: 2),
+                        // ),
                       ),
                     ),
                   ),
@@ -140,6 +152,12 @@ class _RegisterState extends State<Register> {
                     margin: const EdgeInsets.only(left: 10, right: 10),
                     child: TextField(
                       decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50),
+                          borderSide: const BorderSide(
+                              color: Color.fromARGB(255, 9, 175, 134),
+                              width: 2),
+                        ),
                         labelText: 'PASSWORD',
                         labelStyle: const TextStyle(
                           color: Color.fromARGB(255, 9, 175, 134),
@@ -148,12 +166,12 @@ class _RegisterState extends State<Register> {
                           Icons.lock,
                           color: Color.fromARGB(255, 9, 175, 134),
                         ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: const BorderSide(
-                              color: Color.fromARGB(255, 9, 175, 134),
-                              width: 2),
-                        ),
+                        // border: OutlineInputBorder(
+                        //   borderRadius: BorderRadius.circular(50),
+                        //   borderSide: const BorderSide(
+                        //       color: Color.fromARGB(255, 9, 175, 134),
+                        //       width: 2),
+                        // ),
                       ),
                     ),
                   ),
